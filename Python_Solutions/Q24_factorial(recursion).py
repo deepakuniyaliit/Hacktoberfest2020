@@ -1,4 +1,3 @@
-#%%
 #Function for calulating the factorial
 def factorial(x): 
     if x == 1 or x== 0 : #base/terimination condition
@@ -13,5 +12,3 @@ def factorial(x):
 # main
 num = int(input("Enter a Number :")) # To take input from the user (should be > = 0)
 print("Factorial of", num, "is", factorial(num)) 
-
-# %%
