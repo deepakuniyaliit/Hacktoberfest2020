@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int recursiveMinimum(int arr[],int first,int last)
+int recursiveMaximum(int arr[],int first,int last)
 {
     static int max=arr[first];
     if(max<=arr[first])
@@ -25,6 +25,6 @@ int main()
     {
         cin>>arr[i];
     }
-    int max=recursiveMinimum(arr,0,n-1);
+    int max=recursiveMaximum(arr,0,n-1);
     cout<<"The maximum element of the array is: "<<max;
 }
