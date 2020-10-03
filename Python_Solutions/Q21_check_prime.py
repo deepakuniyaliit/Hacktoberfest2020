@@ -1,4 +1,3 @@
-#%%
 # Function to check number is prime or not
 def isPrime(num):
     if num > 1:
@@ -14,6 +13,3 @@ def isPrime(num):
 # main
 num = int(input("Enter a Number ")) # To take input from the user
 isPrime(num)
-
-
-# %%
