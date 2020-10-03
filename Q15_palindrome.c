@@ -1,4 +1,4 @@
-//lindrome program
+//palindrome program
 
 #include <stdio.h>
 #include <string.h>
