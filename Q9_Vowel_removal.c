@@ -13,13 +13,13 @@ void main()
 		if(str[i]=='a' || str[i]=='e' || str[i]=='i' ||
 		str[i]=='o' || str[i]=='u' || str[i]=='A' ||
 		str[i]=='E' || str[i]=='I' || str[i]=='O' ||
-		str[i]=='U')
+		str[i]=='U') //condition to check for vowels
 		{
 			for(j=i; j<len; j++)
 			{
-				str[j]=str[j+1];
+				str[j]=str[j+1]; //logic to shift each character one place backward whenever a vowel is found
 			}
-		len--;
+		len--; //decreasing the length of the string accordingly
 		}
 	}
 	printf("Modified string : %s",str);
