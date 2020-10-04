@@ -53,3 +53,19 @@ Sample output – THE EASY CONCEPTS
 29. Create a GUI based program that allows two players to play Tic Tac Toe. You can use java Script to create this program.
 30. Write a Java Script program that creates a random shape of random color on random location of your computer screen which appears after random amount of time and disappears when shape is clicked by user. The program should be able to calculate the time difference between appearance and disappearance of shape and show it on the top left corner of screen.
 31. Detect if a number is a happy number. A number is happy number if sequence of operations where number is replaced by sum of square of its digits leads eventually to 1. A number is not a happy number if we are in an infinite loop when above operations are performed.
+32.  Write a program in C++ to print the Floyd's Triangle.
+
+  1 
+  01
+  101 
+  0101 
+  10101
+  
+33.Write a C++ Program to display the pattern like pyramid using the alphabet.
+
+        A
+      A B A 
+    A B C B A
+  A B C D C B A
+
+34.Writa a C++ program to convert a binary number to decimal number system.
