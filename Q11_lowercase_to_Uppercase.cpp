@@ -1,16 +1,12 @@
 #include<iostream>
 using namespace std;
-int main()
-{
-int i;
-char a[100];
-cout<<"Enter a string"<<endl;
-cin>>a;
-for(i=0;a[i]!='\0';i++)
-{
-    if(a[i]>='a' && a[i]<'z')
-      a[i]=a[i]-32;
-}
-cout<<"Upper case string is : ";
-cout<<a;
+int main() {
+    int i,n;
+    string str;
+    cin>>str; //taking input of string
+    n=str.length(); //computing length of string
+    for(i=0;i<n;i++){
+        str[i]^=32; //changing case of each letter separately using bit manipulation.
+    }
+    cout<<str; //printing the modified string
 }
