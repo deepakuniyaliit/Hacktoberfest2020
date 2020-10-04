@@ -26,18 +26,23 @@ Example - For the first program in the list I will make file name - Q1_factorial
 
 
 
-In case of any query you can visit[here](https://www.youtube.com/c/TheEasyConcepts/) and ask your queries in the comment section of respective video.
+In case of any query you can visit [here](https://www.youtube.com/c/TheEasyConcepts/) and ask your queries in the comment section of respective video.
 
 
 
 Learn Computer Science Concepts in an Easy Way with The Easy Concepts!!
 
-[Website](http://www.theeasyconcepts.com/)
-[Facebook](https://www.facebook.com/theeasyconcepts/)
-[Twitter](https://twitter.com/theeasyconcepts)
-[GitHub](https://github.com/deepakuniyaliit/OOP)
-[LinkedIn](https://www.linkedin.com/in/deepak-uniyal-592b7545)
-[Telegram](https://t.me/theeasyconcepts)
+ 🕸 [Website](http://www.theeasyconcepts.com/)
+
+ 🤖 [Facebook](https://www.facebook.com/theeasyconcepts/)
+
+ 🦚 [Twitter](https://twitter.com/theeasyconcepts)
+
+ 🐈  [GitHub](https://github.com/deepakuniyaliit/OOP)
+
+ 🤼 [LinkedIn](https://www.linkedin.com/in/deepak-uniyal-592b7545)
+
+ 📳  [Telegram](https://t.me/theeasyconcepts)
 
 
 Deepak Uniyal
