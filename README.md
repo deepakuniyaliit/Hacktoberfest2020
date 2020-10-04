@@ -45,5 +45,6 @@ Learn Computer Science Concepts in an Easy Way with The Easy Concepts!!
  📳  [Telegram](https://t.me/theeasyconcepts)
 
 
-Deepak Uniyal
+## :heart: Contributor
+Made by Deepak Uniyal
 M.Tech. CSE IIT Roorkee
