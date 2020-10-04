@@ -1,0 +1,114 @@
+.square {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  display: none;
+}
+.au{
+
+  position:absolute;
+	height: 20em;
+	width: 25em;
+	border-radius: 190% / 150% 149% 135% 55%;
+	-moz-border-radius: 100% / 120% 100% 95% 85%;
+	-webkit-border-radius: 100% / 120% 100% 95% 85%;
+	border: 0.8em solid black;
+  display: none;
+}
+
+.circle  {
+  position:absolute;
+	height: 20em;
+	width: 25em;
+	border-radius: 100% / 120% 100% 95% 85%;
+	-moz-border-radius: 100% / 120% 100% 95% 85%;
+	-webkit-border-radius: 100% / 120% 100% 95% 85%;
+	border: 0.8em solid black;
+}
+.snap-game{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.thug {
+  position: absolute;
+  width: 11em;
+  height: 11em;
+  border-color: #007bff transparent transparent transparent;
+  display:none;  
+}
+
+.cat{
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  border: 20px solid white;  
+  border-radius: 45%;
+  margin: 100px auto;
+  display: none;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+}
+#img-meow{
+  align-self: center; margin-top: 8%; margin-left: 3%;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }    <h1 class="animate__animated animate__bounce">An animated element</h1>
+
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid red;
+}
