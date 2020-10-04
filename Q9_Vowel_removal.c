@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 int check_vowel(char);
 int main()
@@ -26,4 +27,3 @@ if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' |
 return 1;
 else
 return 0;
-}
