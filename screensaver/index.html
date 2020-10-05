@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScreenSaver</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/css.css" />
+  </head>
+
+  <body id="body">
+    <button onclick="start(); show();" class="btn btn-primary" style="top: 0;">
+      Start Timer
+    </button>
+    <div id="txt" class="btn btn-secondary"></div>
+    <button onclick="pause()" class="btn btn-warning" style="top: 0;">
+      Pause Timer
+    </button>
+    <button onclick="reset()" class="btn btn-danger" style="top: 0;">
+      Reset Timer
+    </button>
+    <div class="cursor"></div>
+
+    <div class="btn btn-secondary" id="txt1"></div>
+
+    <div class="square animate__wobble" id="square" onclick="square()">
+      <img src="./assets/sponge_bob.png" width="200px" height="200px" />
+    </div>
+    <div
+      class="circle animate__animated animate__bounce"
+      id="circle"
+      onclick="circle()"
+    >
+      <img src="./assets/angry-bord.png" width="90%" height="90%" />
+    </div>
+    <div class="thug animate__rubberBand" id="thug" onclick="thug()">
+      <img src="./assets/thug.png" width="150%" height="150%" />
+    </div>
+    <div class="cat animate__shakeY" id="cat" onclick="cat()">
+      <img src="./assets/meow.png" width="350px" height="180px" id="img-meow" />
+    </div>
+    <div class="au animate__heartBeat" id="au" onclick="au()">
+      <img src="./assets/among-us.png" />
+    </div>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+//Program to convert string into Uppercase.
+
+#include <iostream>
+#include <string.h>
+#include<stdlib.h>
+using namespace std;
+
+//Driver code
+int main()
+{
+   char str[30];
+   int i;
+   cout<<"Enter the String : ";                //message for user to enter the string.
+   cin.getline(str,30);         
+   for(i=0;i<=strlen(str);i++){ 
+      if(str[i]>=97 && str[i]<=122){           //ASCII value of a to z (lower chars) ranges from 97 to 122
+		str[i]=str[i]-32;
+      }
+   }
+cout<<"The entered string in uppercase: "<<str;
+return 0;
+}
