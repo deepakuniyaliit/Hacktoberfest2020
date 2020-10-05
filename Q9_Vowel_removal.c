@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 int check_vowel(char);
 int main()
@@ -20,6 +19,7 @@ strcpy(s, t);
 printf("Modified string: %s\n", t); // printing modified string
 return 0;
 }
+
 // function to check if the passed character is a vowel or not
 int check_vowel(char ch) 
 {
@@ -27,3 +27,4 @@ if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' |
 return 1;
 else
 return 0;
+}
