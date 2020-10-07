@@ -69,3 +69,7 @@ Sample output – THE EASY CONCEPTS
   A B C D C B A
 
 34.Writa a C++ program to convert a binary number to decimal number system.
+35. Given an input, write an programe that returns the RUN LENGTH ENCODED string for the input string.
+	Example:
+		input: wwwwwaaadexxxxxxx
+		output: w5a3d1e1x7
