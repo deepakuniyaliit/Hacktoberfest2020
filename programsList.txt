@@ -73,3 +73,8 @@ Sample output – THE EASY CONCEPTS
 	Example:
 		input: wwwwwaaadexxxxxxx
 		output: w5a3d1e1x7
+36. Given an array of words, print the count of all anagrams together in increasing order.
+	Example:
+		input: {"cat","dog","tac","god","act"}
+		grouped anagrams are (dog,god)(cat,tac,act)
+		output: 2,3
