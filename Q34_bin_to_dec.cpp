@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 int BinaryToDecimal(int n) 
 {
    int decimal = 0;
@@ -7,10 +9,10 @@ int BinaryToDecimal(int n)
    {
       int lastDigit = temp % 10;
       temp = temp/10;
-      decimalNumber += lastDigit*base;
+      decimal += lastDigit*base;
       base = base*2;
    }
-   cout<<"Decimal conversion of"<<n<<" is "<<decimalNumber<<endl;;
+   cout<<"Decimal conversion of "<<n<<" is "<<decimal<<endl;;
 }
 int main()
 {
