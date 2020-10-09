@@ -1,0 +1,79 @@
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+int i,j,position=0;
+void play()
+{
+	srand(time(NULL));
+	do
+	{
+		int dice=0;
+		printf("Roll your Dice\n");
+		
+	
+  	    dice=(rand()%6);
+  	    printf("your dice is: %d\n",dice);
+  	    position+=dice;
+  	    position=position_checker(position);
+  	    printf("Your position is now: %d \n",position);
+	}while(position<25);
+	 printf(".........................Superb You won.......................\n");
+}
+int position_checker(int posi)
+{
+	
+	switch(posi)
+	{
+	   case 23:
+	   	  printf("oops your caught! \n");
+	   	   posi-=10;
+	   	   break;
+	    case 19:
+	    	printf("oops your caught! \n");
+		    posi-=5;
+		    break;
+		case 5:
+			printf("oops your caught! \n");
+		    posi+=10;
+		    break;
+		case 6:
+			printf("oops your caught! \n");
+		    posi=1;	
+			break; 	   
+		
+	}
+	return posi;
+}
+int main(){
+    int choice=0;
+	printf("---------------Snake and ladder Game---------------------\n");
+   int a[5][5]={
+	   			{21,22,23,24,25  },
+	   			{ 20,19,18,17,16 },
+	   			{ 11,12,13,14,15 },
+	   			{10,9,8,7,6  },
+	   			{ 1,2,3,4,5 }
+		    };
+   for(i=0;i<5;i++)
+   {
+   	 for(j=0;j<5;j++)
+   	 {
+   	 	printf("%d ",a[i][j]);
+		}
+		printf("\n");
+   }
+   printf("-------------------------------------------------------------\n");
+   printf("----------Click one-------- \n 1.Play \n 2.Exit\n");
+   scanf("%d",&choice);
+   switch(choice)
+   {
+   	case 1:
+   		play();
+   		break;
+   	case 2:
+	   return 0;
+	   break;	
+   }
+  
+   
+}
