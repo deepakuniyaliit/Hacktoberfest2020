@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int BinaryToDecimal(int n) 
+void BinaryToDecimal(int n) 
 {
    int decimal = 0;
    int base = 1;
@@ -16,6 +16,9 @@ int BinaryToDecimal(int n)
 }
 int main()
 {
-  BinaryToDecimal(100);
-  return 0;
+   int m;
+   cout<<"Enter a number:";
+   cin>>m;
+   BinaryToDecimal(m);
+   return 0;
 }
