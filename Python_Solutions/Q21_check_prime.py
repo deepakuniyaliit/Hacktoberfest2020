@@ -1,7 +1,7 @@
 # Function to check number is prime or not
 def isPrime(num):
     if num > 1:
-        for i in range(2,num):
+        for i in range(2,int(num**0.5)):
             if (num % i) == 0:
                 print(num,"is not a prime number")
                 break
