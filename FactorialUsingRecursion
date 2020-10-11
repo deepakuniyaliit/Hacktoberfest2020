@@ -1,0 +1,25 @@
+// ################### Factorial of a number using Recursion ########################
+//c++ program
+
+#include <iostream>
+using namespace std;
+
+// recursive function to calculate factorial
+
+int fact(int n) {
+  
+  if(n==0)return 1;             // this is base case for recursive function
+
+	return n * fact(n - 1);
+}
+
+//main function
+
+int main() {
+
+	int n;
+	cin >> n;                     // taking input from user
+
+	cout << fact(n);
+
+}
