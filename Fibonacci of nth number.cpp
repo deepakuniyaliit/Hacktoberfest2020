@@ -10,7 +10,7 @@ int fib(int N)
     {
         return 0;
     }
-    //If N is 1 it returns 1
+
     if(N==1)
     {
         return 1;
