@@ -1,6 +1,7 @@
 /* C++ program to find the prime numbers 
  between a given interval */
 #include <bits/stdc++.h> 
+#include<cmath>
 using namespace std; 
 
 /* Function for print prime 
@@ -24,7 +25,8 @@ void primeInRange(int L, int R)
 
 		/* Iterate to check if i is prime 
 		 or not */
-		for (int j = 2; j <= i / 2; ++j) { 
+		int square_root=sqrt(i);
+		for (int j = 2; j <= square_root; ++j) { 
 			if (i % j == 0) { 
 				flag = 0; 
 				break; 
@@ -43,7 +45,7 @@ int main()
 { 
 	// Given Range 
 	int L = 1; 
-	int R = 10; 
+	int R = 20; 
 
 	// Function Call 
 	primeInRange(L, R); 
