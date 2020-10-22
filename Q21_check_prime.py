@@ -1,16 +1,18 @@
-# Function to check number is prime or not
-def isPrime(num):
-	if num > 1:  
-   		for i in range(2, num): 
-       			if (num % i) == 0: 
-           			print(num, "is not a prime number") 
-           			break
-   			else: 
-       				print(num, "is a prime number") 
-  
-	else: 
-   		print(num, "is not a prime number")
+#include <bits/stdc++.h>
+using namespace std;
 
-# main
-num = int(input("Enter a Number ")) # To take input from the user
-isPrime(num)
+int main() 
+{
+	int n,i,c=0;
+	cin >> n;
+	for(i=2;i<n;i++)
+	{
+		if(n%i==0)
+		c++;
+	}
+	if(c==0)
+	cout << "PRIME<< "\n";
+	else
+	cout << "NOT PRIME<< "\n";
+	return 0;
+}
