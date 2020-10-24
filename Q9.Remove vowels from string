@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include <string.h>
+
+int main()
+{
+ char a[100];
+ char removed[100];
+ int count=0;
+ printf("enter a string : ");
+ scanf("%s",a);
+ int l=strlen(a);
+ for(int i=0;a[i]!='\0';i++)
+ {
+   if(a[i]=='a' || a[i]=='o' || a[i]=='i' || a[i]=='e' || a[i]=='u' || a[i]=='A' || a[i]=='E' || a[i]=='I' || a[i]=='O' || a[i]=='U' )
+   {
+     
+   }
+   else 
+   {
+     removed[count]=a[i];
+     count++;
+   }
+
+ }
+ removed[count]='\0';
+ printf("%s",removed);
+  
+
+
+}
