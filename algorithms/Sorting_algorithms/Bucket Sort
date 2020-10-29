@@ -1,0 +1,40 @@
+import java.util.*
+import kotlin.random.Random
+
+
+fun bucketSort(arr: IntArray, n: Int) {
+    var count = IntArray(n)
+    for (i in 0..n-1)
+        count[i] = 0
+
+    for (i in 0..n-1)
+        (count[arr[i]])++;
+
+    var i = 0
+    var j = 0
+    while (i < n)
+    {
+        while (count[i] > 0)
+        {
+            arr[j++] = i
+            (count[i])--
+        }
+        i++
+    }
+}
+
+fun main(args : Array<String>)
+{
+    var arr = IntArray(500)
+
+    for(i in 0..arr.size-1)
+        arr[i]=(Random.nextInt(11,99))
+
+    print("PreArray : ")
+    printMyArray(arr)
+
+    bucketSort(arr,arr.size)
+
+    print("\nSorted Array : ")
+    printMyArray(arr)
+}
