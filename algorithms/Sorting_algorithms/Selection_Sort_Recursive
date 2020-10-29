@@ -1,0 +1,37 @@
+import kotlin.random.Random
+
+fun minimumIndex(a: IntArray, i: Int, j: Int): Int {
+    if (i == j)
+        return i
+
+    var k = minimumIndex(a, i + 1, j)
+    return if (a[i] < a[k]) i else k
+}
+fun recursiveSelcetionSort(a: IntArray, n: Int, index: Int) {
+    if (index == n)
+        return
+    var key = minimumIndex(a, index, n - 1)
+
+    if (key != index) {
+        var temp = a[key]
+        a[key] = a[index]
+        a[index] = temp
+    }
+    recursiveSelcetionSort(a, n, index + 1)
+}
+
+fun main(args : Array<String>)
+{
+    var arr = IntArray(10)
+
+    for(i in 0..arr.size-1)
+        arr[i]=(Random.nextInt(1,100))
+
+    println("PreArray : ")
+    for(x in arr)print("$x ")
+
+    recursiveSelcetionSort(arr,arr.size,0)
+
+    println("\nSorted Array : ")
+    for(x in arr)print("$x ")
+}
