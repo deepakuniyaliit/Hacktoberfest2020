@@ -1,0 +1,19 @@
+Node* Insert(Node *head,int data)
+{
+    Node* temp = new Node();
+    temp->data = data ;
+    temp->next = NULL ;
+    Node* root = head ;
+    if(head == NULL){
+        head = temp;
+        head->next = NULL;
+        return head;
+    }
+    else{
+        while(head->next != NULL){
+            head = head->next;
+        }
+        head->next = temp;
+        return root;
+    }     
+}
