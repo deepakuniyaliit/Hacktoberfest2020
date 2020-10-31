@@ -1,0 +1,20 @@
+Node Insert(Node head,int data) 
+{ 
+Node tmp = new Node(); 
+tmp.data = data; 
+tmp.next = null;
+
+if(head == null) 
+{
+    head = tmp;
+    return head;
+} 
+
+Node current = head;
+while(current.next != null) 
+{
+    current = current.next;
+}
+current.next = tmp;
+return head;
+}
