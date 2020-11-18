@@ -1,0 +1,30 @@
+void mirror_tree(BinaryTreeNode* root) {
+  if (root == nullptr) {
+    return;
+  }
+
+  // We will do a post-order traversal of the binary tree.
+
+  if (root->left != nullptr) {
+    mirror_tree(root->left);
+  }
+
+  if (root->right != nullptr) {
+    mirror_tree(root->right);
+  }
+
+  // Let's swap the left and right nodes at current level.
+
+  BinaryTreeNode* temp = root->left;
+  root->left = root->right;
+  root->right = temp;
+}
+
+int main(int argc, char* argv[]) {
+
+  BinaryTreeNode* root = create_random_BST(15);
+  display_level_order(root);
+  mirror_tree(root);
+  cout << endl << "Mirrored tree = " << endl;
+  display_level_order(root);
+}
